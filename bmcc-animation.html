@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmcc animaton</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<script>
+      function showMenu(){
+          var menu = document.getElementById("menu");
+         if (menu.style.display==="none"){
+           menu.style.display="block";  
+         } else{
+         menu.style.display="none";    
+         }
+      }
+      </script>
+  </head>
+  <body>
+      <div class="border">
+      <div class="container">
+          
+          <header class="page-header">
+            <h1><a href="index.html"><img src="images/bad_logo.png" alt="CUNY Design"></a></h1>
+            
+          </header>
+          
+          <nav class="main-menu">
+              <div class="menu-button"><img src="images/icons8-menu.svg" width="48" alt="" onclick="showMenu();"></div>
+              <div class="menu-nav">
+              <div class="menubar" id="menu">
+              <ul>
+                  <li class="dropdown"><a href="#">Degrees</a>
+                    <ul>
+                        <li><a href="2-year.html">2-year</a></li>
+                        <li><a href="4-year.html">4-year</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#">Topics</a>
+                   <ul>
+                        <li><a href="digital-design.html">Digital Design</a></li>
+                        <li><a href="animation.html">Animation</a></li>
+                       <li><a href="industrial-design.html">Industrial Design</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
+<!--                  <li><a href="#">Search</a></li>-->
+                  <form class="search" action="#" method="post">
+                  <input type="text" placeholder="Search" class="search-input">
+                      <input type="submit" class="search-submit">
+                  </form>
+              </ul>
+                  </div>
+                  </div>
+          </nav>
+          
+          <h2>Design programs across CUNY</h2>
+          <main class="page-main">
+              
+            <img class="image" src="images/mea.jpg" alt="mea student" class="fluid-image">
+            <h3>Borough of Manhattan Community College</h3>
+            <h2>Animation and Motion Graphics</h2>
+            <h4>Degree: A.S. </h4>
+            <p>The Animation and Motion Graphics program provides students with the fundamentals of two- and three-dimensional (2D and 3D) animation, motion graphics, and special effects. Once necessarily hand-made, expensive and rare, animation has undergone a technical transformation and is now a ubiquitous part of special effect, advertising campaigns, video games, movies, and television.
+            </p>
+            <p>
+Upon completion of the program requirements, the Associate of Science degree in Animation and Motion Graphics is awarded. Graduates of this program can enter a growing profession or transfer to bachelor-level programs in Animation at Lehman College or other media related programs at senior colleges.</p>
+          <h4>Transfer Options</h4> 
+          <p> BMCC has articulation agreements with CUNY NYC College of Technology to allow you to seamlessly continue your education there without any loss of credits. </p>    
+
+        <p>Learn More</p> 
+          </main>
+          <footer class="page-footer">CITY UNIVERSIT OF NEW YORK &copy; Copyright 2020</footer>
+    </div>
+      </div>
+  </body>
+</html>
