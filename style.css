@@ -1,0 +1,500 @@
+*{
+    /*
+     * Never set styles on * ! That means it will get applied to every
+     * single element on your page, which gets really slow once you have
+     * a bunch of stuff on here. The only thing you may want to set is
+     * box-sizing. Plus the styles you specified here really only need to
+     * be set on a small handful of divs.
+     */
+
+     margin:0;
+    padding:0;
+    border:none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya Sans';
+    background-color: #64b5f6;
+}
+.border{
+    background-color: #fff;
+      border-radius: 20px;
+    padding-bottom: 1em;
+}
+
+.container{
+
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:auto;
+    margin-top:1em;
+    max-width: 1140px;
+    padding:16px;
+    padding-top:16px;
+    position:relative;
+    /* acts as a ref point to positioned elements inside it */
+}
+
+/* home */
+
+.layoutwrapper{
+    display: block;
+}
+.layout{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 16px;
+}
+.layout img {
+    width: 100%
+}
+
+.one img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.four img{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* Header and Nav Styles */
+
+.headerwrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    width:60%;
+    float:left;
+}
+ 
+header img{
+    max-width:100%;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+h2{
+    font-size:1.2em;
+    clear: both;
+}
+
+.main-menu{
+/*    float:right;*/
+    width:40%;
+    padding-top: 1.5em;
+    border: black 1px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.nav2 {
+    display: block;
+}
+
+.menu-button{
+    text-align: right;
+}
+
+.menu-nav{
+    position:absolute;
+    right:16px;
+    background-color: #fff;
+    width:200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#9be7ff;
+    z-index: 100;
+}
+
+.main-menu ul{
+    /*    display:none;*/
+        list-style-type: none;
+    }
+.main-menu li{
+    /* height:36px; */
+    padding-top:6px;
+    border-bottom: solid 1px #333;
+
+
+}
+
+
+.main-menu li:last-child{ /* targets last list item */
+   border-bottom: none;
+    margin-bottom:0;
+}
+
+.main-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-menu form{
+    padding:5px;
+}
+
+.main-menu input{
+    width:65%;
+    border:solid 1px #ccc;
+    padding:5px;
+}
+
+.main-menu button{
+    width:30%;
+    border:solid 1px #ccc;
+    padding:5px;
+
+    float: right;
+}
+
+.layoutwrapper, main{
+    clear: both;
+}
+/* ******* */
+
+.image{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 1em;
+}
+a{
+    color:#186898;
+}
+
+
+a:hover{
+    color:#bc477b;
+}
+
+.fluid-image{
+    width:100%;
+}
+
+p{
+    margin-bottom:1em;
+    margin-top:1em;
+}
+
+h3{
+    margin-top:1em;
+}
+
+
+.dropdown li{
+    border:none;
+}
+
+.main-menu li a{
+    display:block;
+    padding:6px;
+}
+
+.main-menu li a:hover{
+    background-color: aquamarine;
+}
+
+.menubar{
+    display: none;
+}
+
+.search-input{
+    width: 20%;
+/*    padding: 3px;*/
+/*    border: solid 1px #ccc;*/
+
+}
+.search-submit{
+    width: 60%;
+    padding: 3px;
+    border: solid 1px #ccc;
+
+}
+.search {
+    margin-left: 1em;
+}
+.page-footer{
+    margin-top: none;
+    padding-left: 2em;
+}
+.btn{
+    background-color: darkblue;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: darkorange;
+}
+.learn{
+    margin-top: 1em;
+}
+.programs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* card */
+.card{
+    width: 250px;
+    border: solid 5px #ccc;
+    border-radius:15px;
+    margin: 1%;
+    flex:1 0 auto;
+}
+.card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-body{
+    padding: 16px   ;
+    background-color:azure;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.invis{
+    display: none;
+}
+.layout{
+border-radius: 10px;    
+}
+
+
+#mypic{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.slide-back{
+    position: absolute;
+    left: 2;
+}
+.slide-next{
+    position: absolute;
+    right: 0;
+}
+.slideshow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    clear: both;
+}
+
+.link-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 220px;
+    background-image: url("images/animation.jpg");
+    background-size: cover;
+    font-family: Arial;
+    font-size: 2em;
+/*    font-weight: bold;*/
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.link-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 220px;
+    background-image: url("images/graphic-design-school-digital-arts.jpg");
+    background-size: cover;
+    font-family: Arial;
+    font-size: 2em;
+/*    font-weight: bold;*/
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.link-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 220px;
+    background-image: url("images/industrial-design.jpg");
+    background-size: cover;
+    font-family: Arial;
+    font-size: 2em;
+/*    font-weight: bold;*/
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.link-box1 span{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 10px;
+}
+.link-box2 span{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 10px;
+}
+.link-box3 span{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 10px;
+}
+.link-box1{
+    border-radius: 10px;
+}
+.link-box2{
+    border-radius: 10px;
+}
+.link-box3{
+    border-radius: 10px;
+}
+.layout a{
+width: auto;
+}
+
+.five iframe{
+    border-radius: 10px;
+    
+}
+/* ***** Desktop styles  **** */
+
+@media(min-width: 768px){
+
+     header{
+        width:30%;
+    }
+
+     .main-menu{
+        width:60%;
+         border: black 12px;
+    }
+    .menu-button{
+        display: none;
+    }
+
+    .menu-nav{
+/*        display:block;*/
+        border: none;
+        position:static;
+        width:100%;
+        text-align: right;
+        background-color: transparent;
+        }
+
+    .main-menu li{
+        height:auto;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-left:0;
+        display: inline-block;
+        background-color:transparent;
+        width:100px;
+        margin-left:2em;
+        margin-right:0;
+        text-align: center;
+        }
+
+
+        .main-menu ul{
+            float:left;
+        }
+
+
+        .main-menu form{
+            padding:1px;
+            float:right;
+
+        }
+
+        .main-menu input{
+            width:auto;
+
+        }
+
+        .main-menu button{
+            width:auto;
+            float: none;
+        }
+
+
+    .dropdown ul{
+        display:none;
+        padding: 0px;
+        position:absolute;
+        width:150px;
+        background-color: #fff;
+        border: solid 1px #ccc;
+        text-align: center;
+        border: solid 1px #ccc;
+        z-index: 100;
+        border-radius: 7px;
+    }
+
+
+    .dropdown:hover ul{
+        display:block;
+
+    }
+
+
+    .dropdown li{
+        padding:0;
+        margin-left:0;
+        width:100%;
+
+    }
+    .menubar{
+        position: static;
+        width: auto;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .search {
+        margin-left: 1em;
+        padding-top: 0;
+    }
+ .layout{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+.layout img {
+    width: 100%
+}
+.five, .one{
+    grid-column-start: 1;
+        grid-column-end: 4;
+}
+.one img{
+    border-radius: 10px;
+}
+    .two img{
+       border-radius: 10px; 
+    }
+.three img{
+    border-radius: 10px;
+} /* end of Media Query */
